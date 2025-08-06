@@ -1,0 +1,8 @@
+<h2>Welcome, {{ user.username }}</h2>
+<p>Balance: {{ user.balance }}</p>
+<h3>Available Surveys</h3>
+<ul>
+{% for survey in surveys %}
+  <li>{{ survey.title }} - {{ survey.points }} points</li>
+{% endfor %}
+</ul>
